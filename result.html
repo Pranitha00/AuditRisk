@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Audit Risk Prediction</title>
+        <style>
+            body{
+                background-image: url("https://storage.needpix.com/rsynced_images/background-3909535_1280.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #container{
+                width: 500px;
+                background-image: url("https://nmgprod.s3.amazonaws.com/media/files/95/6d/956d75276f70684b75cf0faf41d00c42/cover_image_1660051692.jpg.760x400_q85_crop_upscale.jpg");
+                background-repeat: no-repeat;
+                background-size:contain;
+                height: 186px;
+                margin: 0 auto;
+                margin-top: 30px;
+                border-radius: 15px;
+                overflow: hidden;
+                margin-bottom: 15px;
+                box-shadow: 0 3px 10px gray;
+                font-family: 'Lobster Two', cursive;
+                text-align: center;
+                padding: 80px;
+            }
+            
+            #container1{
+                width: 550px;
+                background-image: url("https://images.squarespace-cdn.com/content/v1/50cf32ece4b07366e9267386/1554125582418-AFN5DE6RGXOGT4DRN6OS/no_fraud.jpg?format=1000w");
+                background-repeat: no-repeat;
+                background-size:contain;
+                height: 240px;
+                margin: 0 auto;
+                margin-top: 30px;
+                border-radius: 15px;
+                overflow: hidden;
+                margin-bottom: 15px;
+                box-shadow: 0 3px 10px gray;
+                font-family: 'Lobster Two', cursive;
+                text-align: center;
+                padding: 80px;
+            }
+
+            .header{
+                padding-left : 8px;
+                padding-right : 8px;
+                color: black;
+                background-color: rgba(255,255,255,0.6);
+                font-size: 30px;
+                font-family:'Segoe UI';
+            }
+
+            .container-fluid{
+                padding-left : 18px;
+                font-size: 120px;
+                font-family:'Segoe UI';
+            }
+
+            input[type=submit], select{
+                width : 25%;
+                padding: 12px 20px;
+                margin : 8px 0;
+                margin-left : 520px;
+                display: inline;
+                border: 2px solid black;
+                font-size : 20px;
+                font-weight: bold;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            </style>
+    </head>
+    <body>
+        <div class="header">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <img src="https://i0.wp.com/www.iedunote.com/img/22727/audit-risk-scaled.jpg" alt="Logo" width="80" height="100" class="d-inline-block align-text-top"> <b>Audit Risk Prediction</b>
+                </div>
+              </nav>
+              
+        </div>
+        {% if content == "Fraud" %}
+            <div id = "container"></div>
+        {% else %}
+            <div id = "container1"></div>
+        {% endif %}
+        <form action = "#" method = "POST">
+            <input type = "submit" value = "Return to Homepage" align="center"/>
+        </form>
+    </body>
+</html>
